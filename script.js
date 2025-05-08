@@ -12,8 +12,8 @@ const RollBtn = document.querySelector(".btn--roll");
 const holdBtn = document.querySelector(".btn--hold");
 const diceEl = document.querySelector(".dice");
 
-let playerScores , playing , currentPlayer , currentScore;
 // Initial Game Settings
+let playerScores , playing , currentPlayer , currentScore;
 const init = function(){
     playing = true;
     currentPlayer = 0;
@@ -31,6 +31,8 @@ const init = function(){
         player1.classList.toggle("player--active");
     }
 }
+
+init();
 
 const SwitchPlayer = function(){
     player0.classList.toggle("player--active");
